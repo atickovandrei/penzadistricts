@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     List<District> lstDistrict;
-//    List<Attraction> lstAttraction;
+
 
 
     @Override

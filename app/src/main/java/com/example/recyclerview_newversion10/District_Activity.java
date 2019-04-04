@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class District_Activity extends AppCompatActivity {
 
-    private TextView tvtitle,tvdescription,tvcategory;
+    private TextView tvtitle,tvdescription;
     private ImageView img, atimg;
 
 
@@ -20,7 +20,6 @@ public class District_Activity extends AppCompatActivity {
 
         tvtitle = (TextView) findViewById(R.id.txttitle);
         tvdescription = (TextView) findViewById(R.id.txtAbout);
-        //tvcategory = (TextView) findViewById(R.id.txtCat);
         img = (ImageView) findViewById(R.id.thumbnail);
         atimg = (ImageView) findViewById(R.id.atimage_id);
 
@@ -38,8 +37,6 @@ public class District_Activity extends AppCompatActivity {
         atimg.setImageResource(Imageabout);
 
     }
-
-   // List<inform> lstinform;
 
 
 }

@@ -42,7 +42,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public void onBindViewHolder(@NonNull MyViewHolder holder, final int i) {
 
        holder.tv_title.setText(mData.get(i).getTitle());
-//     holder.tv_aboutdistrict.setText(mData.get(i).getTitle());
        holder.img_thumbnail.setImageResource(mData.get(i).getThumbnail());
        holder.img_attraction.setImageResource(mData.get(i).getImageabout());
        holder.cardView.setOnClickListener(new View.OnClickListener() {
@@ -54,7 +53,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
                intent.putExtra("Title", mData.get(i).getTitle());
                intent.putExtra("Description", mData.get(i).getDescription());
-               //intent.putExtra("Aboutdistrict",mData.get(i).getAboutdistrict());
                intent.putExtra("Thumbnail", mData.get(i).getThumbnail());
                intent.putExtra("Imageabout", mData.get(i).getImageabout());
 
@@ -69,7 +67,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
        public class MyViewHolder extends RecyclerView.ViewHolder {
 
            TextView tv_title;
-           // TextView tv_aboutdistrict;
            ImageView img_thumbnail;
            ImageView img_attraction;
            CardView cardView;
@@ -77,7 +74,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
            public MyViewHolder(View itemView) {
                super(itemView);
 
-               //tv_aboutdistrict = (TextView)itemView.findViewById(R.id.aboutdistrict_id);
                tv_title = (TextView) itemView.findViewById(R.id.title_id);
                img_thumbnail = (ImageView) itemView.findViewById(R.id.img_id);
                img_attraction = (ImageView) itemView.findViewById(R.id.atimage_id);

@@ -12,9 +12,8 @@ public class District {
     public District() {
     }
 
-    public District(String title /* category */, String description, int thumbnail, String aboutdistrict, int imageabout) {
+    public District(String title , String description, int thumbnail, String aboutdistrict, int imageabout) {
         Title = title;
-        // Category = category;
         Description = description;
         Thumbnail = thumbnail;
         Aboutdistrict = aboutdistrict;
@@ -26,10 +25,6 @@ public class District {
         return Title;
     }
 
-    /*    public String getCategory() {
-            return Category;
-        }
-    */
     public String getDescription() {
         return Description;
     }
@@ -50,10 +45,6 @@ public class District {
         Title = title;
     }
 
-    /*    public void setCategory(String category) {
-            Category = category;
-        }
-    */
     public void setDescription(String description) {
         Description = description;
     }
