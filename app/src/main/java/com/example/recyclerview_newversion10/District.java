@@ -3,7 +3,6 @@ package com.example.recyclerview_newversion10;
 public class District {
 
     private String Title;
-    // private String Category ;
     private String Description;
     private int Thumbnail;
     private String Aboutdistrict;
