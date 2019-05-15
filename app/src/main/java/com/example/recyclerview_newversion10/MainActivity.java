@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         userCursor.close();
     }
 
+
     @Override
     public boolean onQueryTextSubmit(String query) {
         return false;
